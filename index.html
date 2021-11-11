@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coinbase Stats">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Coinbase Stats</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Coinbase Stats</h1>
+
+        <span>Portfolio Balance</span>
+
+    </header>
+
+    <main>
+
+        <ul class="topbar">
+            <li>Coin</li>
+            <li>Fiat</li>
+            <li>Price</li>
+            <li>Amount</li>
+            <li>Balance</li>
+        </ul>
+
+        <ul class="table-elements" id="tableElements">
+
+            <li><Select name="crypto" id="crypto">
+                    <option selected disabled>Select pair</option>
+                    <Option value="ADA">Cardano</Option>
+                    <Option value="BTC">Bitcoin</Option>
+                    <Option value="ENJ">Enjin Coin</Option>
+                    <Option value="ETH">Ethereum</Option>
+                    <Option value="LRC">Loopring</Option>
+                    <Option value="SOL">Solana</Option>
+                </Select></li>
+
+            <li><select name="fiat" id="fiat">
+                    <option selected disabled>Select pair</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select></li>
+
+            <li class="price"></li>
+            <li class="amount"></li>
+            <li class="balance"></li>
+
+        </ul>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
